@@ -28,10 +28,10 @@ module.exports = function(grunt){
         },
         files: {                                   
           'dist/index.html': 'index.html',   
-          'dist/00.html':'./00-template/index.html',
-          'dist/10.html':'./10-timer-button/index.html',
-          'dist/11.html':'./11-password-visual/index.html',
-          'dist/12.html':'./12-range/index.html',
+          'dist/00-template/index.html':'./00-template/index.html',
+          'dist/10-timer-button/index.html':'./10-timer-button/index.html',
+          'dist/11.password-visual/index.html':'./11-password-visual/index.html',
+          'dist/12-range/index.html':'./12-range/index.html',
           'dist/13.html':'./13-progress/index.html'
         }
       }

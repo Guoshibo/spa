@@ -32,29 +32,29 @@ module.exports = function(grunt){
           'dist/10-timer-button/index.html':'./10-timer-button/index.html',
           'dist/11.password-visual/index.html':'./11-password-visual/index.html',
           'dist/12-range/index.html':'./12-range/index.html',
-          'dist/13.html':'./13-progress/index.html'
+          'dist/13-progress/index.html':'./13-progress/index.html'
         }
       }
     },   
     cssmin: {
       release:{
         files:{
-              'dist/00.css':'./00-template/layout.css',
-              'dist/10.css':'./10-timer-button/layout.css',
-              'dist/11.css':'./11-password-visual/layout.css',
-              'dist/12.css':'./12-range/layout.css',
-              'dist/13.css':'./13-progress/layout.css'
+              'dist/00-template/layout.css':'./00-template/layout.css',
+              'dist/10-timer-button/layout.css':'./10-timer-button/layout.css',
+              'dist/11-password-visual/layout.css':'./11-password-visual/layout.css',
+              'dist/12-range/layout.css':'./12-range/layout.css',
+              'dist/13-progress/layout.css':'./13-progress/layout.css'
         }
       }
     },
     uglify: {
       release:{
         files: {
-                'dist/00.js':'./00-template/main.js',
-                'dist/10.js':'./10-timer-button/main.js',
-                'dist/11.js':'./11-password-visual/main.js',
-                'dist/12.js':'./12-range/main.js',
-                'dist/13.js':'./13-progress/main.js'
+                'dist/00-template/main.js':'./00-template/main.js',
+                'dist/10-timer-button/main.js':'./10-timer-button/main.js',
+                'dist/11-password-visual/main.js':'./11-password-visual/main.js',
+                'dist/12-range/main.js':'./12-range/main.js',
+                'dist/13-progress/main.js':'./13-progress/main.js'
 
         } 
                    

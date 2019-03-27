@@ -1,0 +1,1 @@
+$(function(){var t=6,a=$('input[type="button"]');a.attr("disabled","disabled");var e=window.setInterval(function(){0===--t?(window.clearInterval(e),a.removeAttr("disabled"),a.val("同意")):a.val("同意("+t+"s)")},1e3);a.click(function(){alert("SPA! 10-timer-button task!")})});

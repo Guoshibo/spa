@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>密码可见组件</title>
+  <title>密码框组件测试</title>
   <link rel="stylesheet" href="layout.css">
   <link rel="icon" href="https://i.wangding.in/favicon.ico" sizes="48x48" type="image/png">
 </head>
@@ -12,5 +12,22 @@
 <div class="main"></div>
 <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="main.js"></script>
+<script>
+$(function(){
+  var $btnAddPwd = $('#add-password'),
+      $btnGetPwd = $('#get-password'),
+      pwdbox = [];
+  $btnAddPwd.click(function(){
+    var pwd = new PasswordTextbox({'container': 'div.main'});
+    pwdbox.push(pwd);
+    $btnGetPwd.removeAttr('disabled');
+  });
+  $btnGetPwd.click(function() {
+    pwdbox.forEach(function(pwd) {
+      alert(pwd.getPwd());
+    });                  
+  });
+});
+</script>
 </body>
 </html>

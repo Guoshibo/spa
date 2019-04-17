@@ -1,0 +1,1 @@
+var PasswordTextbox=function(d){var a=$('<input type="password">'),n=$("<div></div>"),p=$('<div class="wd-password">密码：</div>');p.append(a),p.append(n),$(d.container).append(p),this.getPwd=function(){return a.val()}};

@@ -1,0 +1,27 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>定时器按钮测试页面</title><link rel="stylesheet" href="timer-button.css"><link rel="icon" href="https://i.wangding.in/favicon.ico" sizes="48x48" type="image/png"><style>div{
+      width:130px;
+      margin:50 auto;
+    }</style></head><body><div class="box1"></div><div class="box2"></div><script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script><script src="timer-button.js"></script><script>$(function(){
+        var btn1 = new TimerButton({
+          'container':'div.box1',
+          'enabled':false,
+          'duration':6,
+          'text':'同意'
+          });
+
+        btn1.on('timer-button-click',function(){
+          alert('同意')
+          });
+
+        var btn2 = new TimerButton({
+          'container':'div.box2',
+          'enabled':true,
+          'duration':6,
+          'text':'同意'
+          });
+
+        btn2.on('timer-button-click',function(){
+          alert('同意');
+          btn2.reset(false);
+          });
+    });</script></body></html>

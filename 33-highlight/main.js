@@ -1,0 +1,1 @@
+$(function(){$('input[type="button"]').click(function(){var i=$('<div><pre class="javascript"></pre></div><br>');i.find("pre").html($(".code").val()),$("div.main").append(i),hljs.highlightBlock(i[0])})});

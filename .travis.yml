@@ -1,10 +1,9 @@
-
 language: node_js
 node_js:
     - "6"
 
 after_script:
-    - grunt minify
+    - grunt build
     - cd ./dist
     - git init
     - git config user.name "${USER_NAME}"

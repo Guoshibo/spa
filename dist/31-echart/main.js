@@ -1,0 +1,1 @@
+$(function(){for(var t=[],a=[],e=0;e<=1;e+=.1)t.push(e),a.push(i(e));function i(t){return 0===t?0:-1*t*Math.log(t)/Math.LN2-(1-t)*Math.log(1-t)/Math.LN2}var n={title:{text:"二进熵函数曲线"},tooltip:{},legend:{data:["二进熵"]},xAxis:{data:t},yAxis:{},series:[{name:"二进熵",type:"line",smooth:!0,data:a}]};echarts.init($(".main")[0]).setOption(n)});
